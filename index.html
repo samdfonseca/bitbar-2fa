@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/jquery@3.1.1"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/index.css">
+  </head>
+  <body>
+    <script src="/static/index.js"></script>
+    <h3><span class="header">2FA Accounts</span></h3>
+    <form action="/accounts" method="post" id="newAccountForm" class="form-inline">
+      <div class="form-group">
+        <label for="accountNameInput">Account Name</label>
+        <input type="text" class="form-control" name="account_name" id="accountNameInput" placeholder="Account Name">
+      </div>
+      <div class="form-group">
+        <label for="keyInput">Key</label>
+        <input type="text" class="form-control" name="key" id="keyInput" placeholder="ABCDEFGHIJKLMNOP">
+      </div>
+      <button type="submit" class="btn btn-default">Add Account</button>
+    </form>
+    <ul id="accountsList" class="list-group">
+    </ul>
+  </body>
+</html>

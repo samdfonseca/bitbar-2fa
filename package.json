@@ -1,0 +1,26 @@
+{
+  "name": "bitbar-2fa",
+  "version": "1.0.0",
+  "description": "2 factor auth for the bitbar app.",
+  "main": "2fa.1s.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samdfonseca/bitbar-2fa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samdfonseca/bitbar-2fa/issues"
+  },
+  "homepage": "https://github.com/samdfonseca/bitbar-2fa#readme",
+  "dependencies": {
+    "authenticator": "^1.1.2",
+    "bitbar": "^0.3.0",
+    "copy-paste": "^1.3.0",
+    "lowdb": "^0.14.0",
+    "tcp-port-used": "^0.1.2"
+  }
+}
