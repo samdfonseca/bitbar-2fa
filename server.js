@@ -9,10 +9,10 @@ const http = require('http'),
 const ACCOUNTS_FILE = path.join(
   process.argv[1].match(/\/Users\/[a-zA-Z0-9_]+\//)[0],
   '.2fa_accounts.json')
-const db = low(ACCOUNTS_FILE)
-db.defaults({accounts: []}).value()
 
 http.createServer((req, resp) => {
+  const db = low(ACCOUNTS_FILE)
+  db.defaults({accounts: []}).value()
   const req_path = url.parse(req.url).pathname
   switch (true) {
     case /^\/$/.test(req_path):
