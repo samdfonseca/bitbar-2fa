@@ -63,7 +63,8 @@ function parseData(accounts) {
       items.push({
         text: token,
         bash: process.argv[1],
-        param1: token,
+        param1: 'copy',
+        param2: token,
         terminal: false,
         refresh: true
       })
